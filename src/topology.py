@@ -89,9 +89,9 @@ def build_network(json_path, delay):
     dns_host = hosts["dns"]
     server = os.path.join(ROOT, "src", "dns_server.py")
 
-    # Esto de abajo no servia y lo moficiamos con IA.
+    # Esto de abajo no servia y lo modificamos con IA.
 
-    # Usar el MISMO interprete que corre esta topologia (asi, si estamos en un entorno virtual, el servidor DNS tambien tiene Scapy disponible).
+    # Usar el mismo interprete que corre esta topologia (en un entorno virtual, el servidor DNS tambien tiene Scapy disponible).
     dns_host.cmd("%s %s --delay %f > /tmp/dns_server.log 2>&1 &"
                  % (shlex.quote(sys.executable), shlex.quote(server), delay))
 

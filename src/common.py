@@ -104,7 +104,7 @@ def mac_to_hex(mac):
     return "0x" + mac.replace(":", "").lower()
 
 
-# prueba rapida -> python3 common.py nos imprime los hashes de unos dominios. Cambienlo si nos les sirve xd
+# prueba: python3 common.py imprime los hashes de unos dominios.
 if __name__ == "__main__":
     print("CACHE_SIZE = {} (mascara 0x{:X})".format(CACHE_SIZE, CACHE_MASK))
     print("HASH_BYTES = {}".format(HASH_BYTES))
